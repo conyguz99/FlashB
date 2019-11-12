@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        {%block title%}<tile>Fechas de reserva</tile>{%endblock%}
+        <meta charset='utf-8'>
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css ">
+        <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="%static 'css/style.css'%">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                 {%block sidebar%}
+                 <ul class="sliderbar-nav">
+                     <li><a href=" ">Home</a></li>
+                     <li><a href=" ">Todas las fechas</a></li>
+                 </ul>
+                 {%endblock%}
+                </div>
+                <div class="col-sm-10">
+                {%block content%} {%endblock%}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
